@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tygre.OM.Entities\Tygre.OM.Entities.csproj" />
+    <ProjectReference Include="..\Tygre.OM.Repositories\Tygre.OM.Repositories.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tygre.Core", "Tygre.Core\Tygre.Core.csproj", "{0AC105F6-722D-4F7A-880A-7A229C9AC5C5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tygre.OM.Entities", "Tygre.OM.Entities\Tygre.OM.Entities.csproj", "{4B9A36BE-54AF-4D63-81BA-0767AAD27A06}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tygre.OM.Repositories", "Tygre.OM.Repositories\Tygre.OM.Repositories.csproj", "{497B06D4-B9DE-4465-AC86-55C3AA515EAA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tygre.OM.Services", "Tygre.OM.Services\Tygre.OM.Services.csproj", "{E42CEF8E-648C-4183-93DD-D41692AAA169}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tygre.OM.WebUI", "Tygre.OM.WebUI\Tygre.OM.WebUI.csproj", "{F2AEAD2D-7DA6-479B-B7DC-EC429CCA916D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0AC105F6-722D-4F7A-880A-7A229C9AC5C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AC105F6-722D-4F7A-880A-7A229C9AC5C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AC105F6-722D-4F7A-880A-7A229C9AC5C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AC105F6-722D-4F7A-880A-7A229C9AC5C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B9A36BE-54AF-4D63-81BA-0767AAD27A06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B9A36BE-54AF-4D63-81BA-0767AAD27A06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B9A36BE-54AF-4D63-81BA-0767AAD27A06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B9A36BE-54AF-4D63-81BA-0767AAD27A06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{497B06D4-B9DE-4465-AC86-55C3AA515EAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{497B06D4-B9DE-4465-AC86-55C3AA515EAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{497B06D4-B9DE-4465-AC86-55C3AA515EAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{497B06D4-B9DE-4465-AC86-55C3AA515EAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E42CEF8E-648C-4183-93DD-D41692AAA169}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E42CEF8E-648C-4183-93DD-D41692AAA169}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E42CEF8E-648C-4183-93DD-D41692AAA169}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E42CEF8E-648C-4183-93DD-D41692AAA169}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2AEAD2D-7DA6-479B-B7DC-EC429CCA916D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2AEAD2D-7DA6-479B-B7DC-EC429CCA916D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2AEAD2D-7DA6-479B-B7DC-EC429CCA916D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2AEAD2D-7DA6-479B-B7DC-EC429CCA916D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7F8DC15B-D1C1-4E11-B669-F664C25EC313}
+	EndGlobalSection
+EndGlobal

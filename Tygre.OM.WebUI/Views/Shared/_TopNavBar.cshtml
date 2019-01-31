@@ -1,0 +1,29 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+
+<nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark p-0">
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">TYGER / OMS</a>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" asp-action="Index" asp-controller="Home">Ana Sayfa <span class="sr-only">(current)</span></a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Yönetici Paneli</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav px-3">
+            <li class="nav-item text-nowrap">
+                <a class="nav-link" asp-action="Profil" asp-controller="Account">Profil</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav px-3">
+            <li class="nav-item text-nowrap">
+                <a class="nav-link" asp-action="Logout" asp-controller="Account">Çıkış Yap</a>
+            </li>
+        </ul>
+
+    </div>
+</nav>

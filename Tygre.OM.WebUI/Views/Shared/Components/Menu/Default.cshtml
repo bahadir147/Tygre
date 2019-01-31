@@ -1,0 +1,27 @@
+﻿@model List<Tygre.OM.Entities.DtoModels.DTOPersonelYetkileri>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *,Tygre.OM.WebUI
+
+<nav class="col-md-2 d-none d-md-block bg-light sidebar">
+
+    @if (User.Identity.IsAuthenticated)
+    {
+        <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+                    @foreach (var item in Model)
+                    {
+                        <li class="nav-item">
+                            <a is-active-route asp-controller=@item.Controller asp-action=@item.Action class="nav-link">
+                                <span  class="mr-2 glyphicon glyphicon-@item.Icon"></span>
+                                @item.Adi
+                            </a>
+                        </li>
+                    }
+            </ul>
+
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                <span>Saved reports</span>
+            </h6>
+        </div>
+    }
+</nav>
