@@ -16,9 +16,9 @@ namespace Tygre.OM.WebUI.Controllers
             _personelService = personelService;
         }
 
-        public IActionResult List()
+        public async Task<IActionResult> List()
         {
-            var personeller = _personelService.GetPersonelListesi();
+            var personeller = await _personelService.GetPersonelListesi();
             return View(personeller);
         }
     }

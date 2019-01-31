@@ -1,36 +1,63 @@
-﻿
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model List<Tygre.OM.Entities.DtoModels.DTOPersonel>
 @{
     ViewData["Title"] = "Personel Listesi";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Personeller</h2>
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+    <h1 class="h2">Personeller</h1>
+    <div class="btn-toolbar mb-2 mb-md-0">
 
-
-<table class="table">
+        <div class="btn-group mr-1">
+            <div class="col-12 text-center">
+                <button class="row btn btn-sm btn-danger">
+                    <i class="glyphicon glyphicon-plus"></i>
+                    Yeni Personel Ekle
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="btn-toolbar mb-3 float-right mr-1">
+        <div class="btn-group">
+            <input class="form-check-input" type="checkbox" value="" onclick="activePersonelCheck()" id="aktifCheck">
+            <label class="form-check-label font-weight-bolder" for="aktifCheck">
+                Sadece Aktifleri Göster
+            </label>
+        </div>
+</div>
+<table class="table table-hover" id="personelTable">
     <thead class="thead-dark">
         <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
+            <th scope="col">Adı</th>
+            <th scope="col">Soyadı</th>
+            <th scope="col">Unvan</th>
+            <th scope="col">Cinsiyet</th>
+            <th scope="col">D.Tarihi</th>
+            <th scope="col">İşe Giriş Tarihi</th>
+            <th scope="col">Durum</th>
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-        </tr>
-        <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Adi</td>
+                <td>@item.SoyAdi</td>
+                <td>@item.Unvan</td>
+                <td>@item.Cinsiyet</td>
+                <td>@item.DogumTarihi.ToShortDateString()</td>
+                <td>@item.IseBaslamaTarihi.ToShortDateString()</td>
+                <td>@item.Status</td>
+            </tr>
+        }
     </tbody>
 </table>
+
+
+
+@section Scripts {
+
+    <script src="~/Scripts/Personel/ViewPersonelList.js"></script>
+}
