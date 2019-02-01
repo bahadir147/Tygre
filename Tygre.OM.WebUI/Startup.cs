@@ -64,7 +64,8 @@ namespace Tygre.OM.WebUI
 
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
+                app.UseExceptionHandler("/Error");
+                //app.UseDeveloperExceptionPage();
             }
             else
             {
@@ -74,6 +75,7 @@ namespace Tygre.OM.WebUI
             app.UseCookiePolicy();
 
             app.UseAuthentication();
+            app.UseStatusCodePagesWithRedirects("/error");
 
 
             app.UseMvc(routes =>
